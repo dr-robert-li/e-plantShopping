@@ -7,7 +7,11 @@ export default defineConfig({
   base: '/e-plantShopping/',
   build: {
     outDir: 'dist',
-    assetsDir: 'assets',
-    sourcemap: true
+    emptyOutDir: true,
+    rollupOptions: {
+      output: {
+        manualChunks: undefined
+      }
+    }
   }
 })
