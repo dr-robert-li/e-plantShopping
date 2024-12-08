@@ -5,4 +5,4 @@ Developing Front-End Apps with React > Module 4 > Final Project: Paradise Nurser
 
 Deploy branch: gh-pages (https://github.com/dr-robert-li/e-plantShopping/tree/gh-pages)
 
-URL: https://dr-robert-li.github.io/e-plantShopping/
+Live Page URL: https://dr-robert-li.github.io/e-plantShopping/
