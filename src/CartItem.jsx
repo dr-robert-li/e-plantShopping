@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { useSelector, useDispatch } from 'react-redux';
 import { removeItem, updateQuantity } from './CartSlice';
 import './CartItem.css';
@@ -19,10 +20,10 @@ const CartItem = ({ onContinueShopping }) => {
     onContinueShopping(e);
   };
 
-// Checkout functionality
-const handleCheckoutShopping = (e) => {
-  alert('Functionality to be added for future reference');
-};
+  // Checkout functionality
+  const handleCheckoutShopping = (e) => {
+    alert('Checkout is not working yet, but we are working on it! Check back later!');
+  };
 
   const handleIncrement = (item) => {
     dispatch(updateQuantity({
@@ -81,6 +82,10 @@ const handleCheckoutShopping = (e) => {
       </div>
     </div>
   );
+};
+
+CartItem.propTypes = {
+  onContinueShopping: PropTypes.func.isRequired,
 };
 
 export default CartItem;
